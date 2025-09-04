@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphing Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="title-pane" class="title-pane">
+    <canvas id="plots-bg"></canvas>
+    <div class="title-content">
+      <h1>Graphing Practice</h1>
+    </div>
+  </section>
+  <section id="quiz" class="quiz-section">
+    <div class="quiz-container">
+      <div class="quiz-prompt">
+        <span>Enter the slope-intercept form for the coordinate:</span>
+        <span id="quiz-coord" class="quiz-coord">(3, 7)</span>
+      </div>
+      <form id="quiz-form" autocomplete="off">
+        <input type="text" id="quiz-answer" placeholder="y = mx + b" required />
+        <button type="submit">Submit</button>
+      </form>
+      <div class="plot-area">
+  <canvas id="quiz-plot" width="900" height="600"></canvas>
+      </div>
+      <div class="tally-bar">
+        <div class="tally correct"><span id="tally-correct">0</span> Correct</div>
+        <div class="tally total"><span id="tally-total">0</span> Attempts</div>
+        <div class="tally incorrect"><span id="tally-incorrect">0</span> Incorrect</div>
+      </div>
+      <div id="feedback-overlay" class="feedback-overlay hidden">
+        <div id="feedback-message"></div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
